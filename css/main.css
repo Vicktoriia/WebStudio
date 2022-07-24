@@ -394,6 +394,11 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  .header__content {
+    display: none;
+  }
+}
 
 .top-menu {
   display: -webkit-box;
