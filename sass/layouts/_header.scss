@@ -1,5 +1,10 @@
 .header {
   width: 100%;
+  min-height: 60px;
+  z-index: 1;
+  top: 0px;
+
+  position: fixed;
 
   display: flex;
   align-items: center;
@@ -7,6 +12,10 @@
 
   background-color: var(--main-bg);
   border-bottom: 1px solid var(--nav-underline);
+
+  @media screen and (min-width: 768px) {
+    position: static;
+  }
 
   &__content {
     margin-left: 93px;
@@ -17,7 +26,7 @@
     align-items: center;
     justify-content: space-between;
 
-      @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
@@ -27,4 +36,5 @@
   @extend %container;
   display: flex;
   align-items: center;
+  width: 1200px;
 }

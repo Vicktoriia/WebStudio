@@ -16,10 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link  rel="stylesheet" href="./css/main.min.css" />
-    <link  rel="stylesheet" href="./css/styles.css" />
-    <link  rel="preconnect" href="https://fonts.googleapis.com" />
-    <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -28,7 +28,7 @@
 
   <body data-boody>
     <!--Header-->
-    <header class="header">
+    <header class="header" data-header>
       <div class="top-menu">
         <a class="header__logo logo link" href="./index.html">
           <span class="logo--accent">Web</span>Studio
@@ -37,14 +37,12 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__link nav__link--active link" href="./index.html">Студия</a>
+                <a class="nav__link nav__link--active link" href="./index.html"
+                  >Студия</a
+                >
               </li>
               <li class="nav__item">
-                <a
-                  class="nav__link link"
-                  href="./portfolio.html"
-                  >Портфолио
-                </a>
+                <a class="nav__link link" href="./portfolio.html">Портфолио </a>
               </li>
               <li class="nav__item">
                 <a class="nav__link link" href="#contacts">Контакты</a>
@@ -80,8 +78,93 @@
             </li>
           </ul>
         </div>
+        <button class="mobile-menu-btn btn" type="button" data-menu-button>
+          <svg class="mobile-menu-icon" width="24" height="16">
+            <use
+              class="mobile-menu-img"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+            <use
+              class="mobile-menu-close"
+              href="./images/icons.svg#icon-close-menu"
+            ></use>
+          </svg>
+        </button>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" data-menu>
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu-nav__item">
+              <a
+                class="mobile-menu__link mobile-menu__link--active link"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu__link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu-contacts__item">
+              <a
+                class="mobile-menu__link mobile-menu__link--active mobile-menu__link--tel link"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts__item mobile-menu__link--mail">
+              <a class="mobile-menu__link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__socials list">
+            <li class="mobile-menu-socials__item">
+              <a
+                class="mobile-menu__link link"
+                href="#"
+                target="-blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a
+                class="mobile-menu__link link"
+                href="#"
+                target="-blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a
+                class="mobile-menu__link link"
+                href="#"
+                target="-blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a
+                class="mobile-menu__link link"
+                href="#"
+                target="-blank"
+                rel="noopener noreferrer"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+    <main>
       <!--Hero section -->
       <section class="hero">
         <div class="hero__container">
@@ -601,11 +684,7 @@
                 target="-blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="social-link__icon"
-                  width="20px"
-                  height="20px"
-                >
+                <svg class="social-link__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -618,11 +697,7 @@
                 target="-blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="social-link__icon"
-                  width="20px"
-                  height="20px"
-                >
+                <svg class="social-link__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -635,11 +710,7 @@
                 target="-blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="social-link__icon"
-                  width="20px"
-                  height="20px"
-                >
+                <svg class="social-link__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -652,11 +723,7 @@
                 target="-blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="social-link__icon"
-                  width="20px"
-                  height="20px"
-                >
+                <svg class="social-link__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -740,7 +807,9 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <div class="modal-form__input-container modal-form__input-container-comment">
+          <div
+            class="modal-form__input-container modal-form__input-container-comment"
+          >
             <textarea
               id="modalcomment"
               class="modal-form__input modal-form__comment"
@@ -759,22 +828,22 @@
                 class="license__checkbox visually-hidden"
                 type="checkbox"
                 name="license__label"
-                />
+              />
               <span class="license__checkbox-img">
                 <svg class="license__icon-check" width="16px" height="15px">
-                  <use class="license--checked"
-                  href="./images/icons.svg#icon-check"></use>
-                  <use class="license--nochecked"
-                  href="./images/icons.svg#icon-checkbox"></use>
+                  <use
+                    class="license--checked"
+                    href="./images/icons.svg#icon-check"
+                  ></use>
+                  <use
+                    class="license--nochecked"
+                    href="./images/icons.svg#icon-checkbox"
+                  ></use>
                 </svg>
               </span>
               <span class="license__label-inner">
                 Соглашаюсь с рассылкой и принимаю
-                <a
-                  class="license__link link"
-                  href=""
-                  rel="noopener noreferrer"
-                >
+                <a class="license__link link" href="" rel="noopener noreferrer">
                   Условия договора
                 </a>
               </span>
@@ -785,5 +854,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>

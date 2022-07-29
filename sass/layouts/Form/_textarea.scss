@@ -11,12 +11,16 @@
   &::placeholder {
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
     line-height: calc(16 / 14);
     letter-spacing: 0.1em;
     color: rgba(117, 117, 117, 0.5);
     opacity: 0;
     transition: opacity 250ms ease-in-out 50ms;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(14 / 12);
+    }
   }
 
   &:hover::placeholder,
