@@ -26,7 +26,7 @@
   }
 }
 
-.footer__container, .projects, .filters, .clients__container, .team__container, .activities__container, .benefits__container, .hero__container, .top-menu {
+.footer__container, .projects, .filters, .clients__container, .team__container, .activities__container, .benefits__container, .top-menu {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -34,12 +34,12 @@
   max-width: 480px;
 }
 @media screen and (min-width: 768px) {
-  .footer__container, .projects, .filters, .clients__container, .team__container, .activities__container, .benefits__container, .hero__container, .top-menu {
+  .footer__container, .projects, .filters, .clients__container, .team__container, .activities__container, .benefits__container, .top-menu {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container, .projects, .filters, .clients__container, .team__container, .activities__container, .benefits__container, .hero__container, .top-menu {
+  .footer__container, .projects, .filters, .clients__container, .team__container, .activities__container, .benefits__container, .top-menu {
     max-width: 1200px;
   }
 }
@@ -203,8 +203,8 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,7 +577,7 @@ img {
 }
 
 .hero {
-  width: 100%;
+  width: 100vw;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,7 +599,7 @@ img {
 }
 
 .hero__container {
-  max-width: 696px;
+  max-width: 360px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,6 +608,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 696px;
+  }
 }
 
 .hero__title {

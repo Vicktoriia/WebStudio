@@ -1,5 +1,5 @@
 .hero {
-  width: 100%;
+  width: 100vw;
   min-height: 400px;
 
   display: flex;
@@ -23,10 +23,12 @@
 }
 
 .hero__container {
-  @extend %container;
-
-  max-width: 696px;
+  max-width: 360px;
   margin: auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 
   display: flex;
   flex-direction: column;
