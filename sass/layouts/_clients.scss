@@ -17,7 +17,7 @@
 }
 
 .clients__item {
-  width: calc((100% - (2 - 1) * 30px) / 2);
+  width: calc((100% - 30px) / 2);
 
   @media screen and (min-width: 768px) {
     width: calc((100% - (3 - 1) * 30px) / 3);
@@ -29,15 +29,15 @@
 }
 
 .clients__link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
 
   @media screen and (min-width: 768px) {
-    width: 226px;
+    max-width: 226px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 170px;
+    max-width: 170px;
   }
 
   display: flex;

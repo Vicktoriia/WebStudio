@@ -820,7 +820,7 @@ img {
 }
 
 .clients__link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,12 +839,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .clients__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__link {
-    width: 170px;
+    max-width: 170px;
   }
 }
 .clients__link:hover, .clients__link:focus {
@@ -908,9 +908,6 @@ img {
 .projects__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   gap: 30px;
 }
 .projects__picture {
@@ -970,6 +967,12 @@ img {
   .projects__item {
     width: calc((100% - 60px) / 3);
   }
+}
+
+.grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .footer {
@@ -1110,7 +1113,7 @@ img {
 }
 
 .footer-form__container {
-  width: 570px;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,6 +1127,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-form__container {
+    max-width: 570px;
     margin-left: 93px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1133,7 +1137,6 @@ img {
 .footer-form__subscription {
   position: relative;
   margin-top: 20px;
-  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1144,15 +1147,8 @@ img {
           justify-content: center;
   gap: 12px;
 }
-@media screen and (min-width: 768px) {
-  .footer-form__subscription {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-form__subscription {
-    width: 570px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -1187,7 +1183,7 @@ img {
 }
 
 .footer-form__email-input {
-  width: 448px;
+  width: 100%;
   height: 50px;
   color: var(--light-text);
   font-size: 16px;
@@ -1200,6 +1196,11 @@ img {
   cursor: pointer;
   -webkit-transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .footer-form__email-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__email-input {
