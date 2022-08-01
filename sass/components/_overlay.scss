@@ -21,7 +21,14 @@
   .projects__item:hover &,
   .projects__item:focus & {
     height: 100%;
-    padding: 77px 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+
+    @media screen and (min-width: 480px) {
+      display: block;
+      padding: 77px 24px;
+    }
 
     @media screen and (min-width: 768px) {
       padding: 49px 24px 77px 24px;
