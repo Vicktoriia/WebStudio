@@ -25,21 +25,24 @@
 
   &:not(:last-child) {
     margin-right: 8px;
+}
+
+  &:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }
 
   @media screen and (min-width: 480px) {
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 15px;
-    }
+    &:not(:nth-last-child) {
+    margin-bottom: 0;
+  }
 
-    &:nth-last-child(2) {
-      margin-bottom: 0;
+    &:not(:nth-last-child(-n + 1)) {
+      margin-bottom: 15px;
     }
   }
 
   @media screen and (min-width: 768px) {
-    &:not(:nth-last-child(-n + 2)) {
+    &:not(:nth-last-child(-n + 1)) {
       margin-bottom: 0;
     }
   }
