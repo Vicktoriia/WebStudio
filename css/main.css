@@ -399,7 +399,17 @@ img {
 }
 .projects__item:hover .overlay, .projects__item:focus .overlay {
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+@media screen and (min-width: 768px) {
+  .projects__item:hover .overlay, .projects__item:focus .overlay {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item:hover .overlay, .projects__item:focus .overlay {
+    padding: 63px 24px;
+  }
 }
 
 .section__title {
