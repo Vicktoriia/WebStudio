@@ -602,7 +602,7 @@ img {
 }
 
 .hero {
-  width: 100%;
+  width: 100vw;
   min-height: 400px;
   margin-top: 60px;
   display: -webkit-box;
